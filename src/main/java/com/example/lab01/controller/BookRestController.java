@@ -2,12 +2,13 @@ package com.example.lab01.controller;
 
 import com.example.lab01.model.Book;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 import java.util.Arrays;
 import java.util.List;
 
-@org.springframework.web.bind.annotation.RestController
-public class RestController {
+@RestController
+public class BookRestController {
     @GetMapping("/")
     public String index() {
         return "Welcome to the Book Store";
